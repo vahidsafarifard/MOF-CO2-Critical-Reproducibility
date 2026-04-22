@@ -37,25 +37,20 @@ git clone https://github.com/vahidsafarifard/MOF-CO2-Critical-Reproducibility.gi
 cd MOF-CO2-Critical-Reproducibility
 jupyter notebook MOF_CO2_Critical_Reproducibility.ipynb
 
-## Dependencies
+Dependencies
 •	pandas
 •	numpy
 •	scikit-learn
 •	matplotlib
 •	seaborn
-
-## Key Lessons for ML in Materials Science
+Key Lessons for ML in Materials Science
 1.	Dataset design > Algorithm choice
 2.	Always ask: "What is the model actually learning?"
 3.	Confounded variables create misleading metrics
 4.	Low R² can be more honest than high R²
-
-## Reference
+Reference
 Li, X., et al. (2023). Applied machine learning to analyze and predict CO₂ adsorption behavior of metal-organic frameworks. Carbon Capture Science & Technology, 9, 100146.
-
-## Author
+Author
 Vahid Safarifard
-
-## License
+License
 MIT
-
