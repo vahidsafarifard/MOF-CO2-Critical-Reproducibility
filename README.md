@@ -24,12 +24,13 @@ When we fix P and T at standard conditions (298K, 100 kPa), the model explains o
 ## Repository Structure
 ├── MOF_CO2_Critical_Reproducibility.ipynb # Main analysis notebook
 ├── Table_S3.csv # Imputed dataset from Li et al.
-├── data_exploration.png # Figure: Data distributions
-├── feature_importance_full.png # Figure: Full model importance
-├── feature_importance_chemistry.png # Figure: Chemistry-only importance
-├── feature_importance_standard.png # Figure: Standard conditions importance
+├── data_exploration.png # Data distributions
+├── feature_importance_full.png # Full model importance
+├── feature_importance_chemistry.png # Chemistry-only importance
+├── feature_importance_standard.png # Standard conditions importance
 └── README.md
 
+text
 
 ## Quick Start
 
@@ -37,21 +38,31 @@ When we fix P and T at standard conditions (298K, 100 kPa), the model explains o
 git clone https://github.com/vahidsafarifard/MOF-CO2-Critical-Reproducibility.git
 cd MOF-CO2-Critical-Reproducibility
 jupyter notebook MOF_CO2_Critical_Reproducibility.ipynb
-
 Dependencies
-•	pandas
-•	numpy
-•	scikit-learn
-•	matplotlib
-•	seaborn
+pandas
+
+numpy
+
+scikit-learn
+
+matplotlib
+
+seaborn
+
 Key Lessons for ML in Materials Science
-1.	Dataset design > Algorithm choice
-2.	Always ask: "What is the model actually learning?"
-3.	Confounded variables create misleading metrics
-4.	Low R² can be more honest than high R²
+Dataset design > Algorithm choice
+
+Always ask: "What is the model actually learning?"
+
+Confounded variables create misleading metrics
+
+Low R² can be more honest than high R²
+
 Reference
 Li, X., et al. (2023). Applied machine learning to analyze and predict CO₂ adsorption behavior of metal-organic frameworks. Carbon Capture Science & Technology, 9, 100146.
+
 Author
 Vahid Safarifard
+
 License
-MIT
+This project is licensed under the MIT License—see the LICENSE file for details.
