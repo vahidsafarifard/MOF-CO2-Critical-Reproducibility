@@ -17,52 +17,51 @@ This repository critically reproduces the study by **Li et al. (2023)** on machi
 
 ### The Critical Insight
 
-While Li et al. report R² = 0.90, **~73% of feature importance comes from Pressure and Temperature**—variables that are trivial thermodynamic controls, not MOF-specific properties.
+While Li et al. report R² = 0.90, roughly 73% of feature importance comes from Pressure and Temperature—variables that are trivial thermodynamic controls, not MOF-specific properties.
 
-When we fix P and T at standard conditions (298K, 100 kPa), the model explains only **17%** of variance in CO₂ uptake. This reveals the true scientific challenge: standard textural properties (BET surface area, pore volume) and metal type are insufficient to predict CO₂ capture performance.
+When we fix P and T at standard conditions (298K, 100 kPa), the model explains only 17% of variance in CO₂ uptake. This reveals the true scientific challenge: standard textural properties (BET surface area, pore volume) and metal type are insufficient to predict CO₂ capture performance.
 
 ## Repository Structure
-├── MOF_CO2_Critical_Reproducibility.ipynb # Main analysis notebook
-├── Table_S3.csv # Imputed dataset from Li et al.
-├── data_exploration.png # Data distributions
-├── feature_importance_full.png # Full model importance
-├── feature_importance_chemistry.png # Chemistry-only importance
-├── feature_importance_standard.png # Standard conditions importance
-└── README.md
 
-text
+MOF_CO2_Critical_Reproducibility.ipynb - Main analysis notebook
+Table_S3.csv - Imputed dataset from Li et al.
+data_exploration.png - Data distributions
+feature_importance_full.png - Full model importance
+feature_importance_chemistry.png - Chemistry-only importance
+feature_importance_standard.png - Standard conditions importance
+README.md
+
 
 ## Quick Start
 
-```bash
 git clone https://github.com/vahidsafarifard/MOF-CO2-Critical-Reproducibility.git
 cd MOF-CO2-Critical-Reproducibility
 jupyter notebook MOF_CO2_Critical_Reproducibility.ipynb
-Dependencies
-pandas
 
-numpy
+## Dependencies
 
-scikit-learn
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
 
-matplotlib
+## Key Lessons for ML in Materials Science
 
-seaborn
+1. Dataset design > Algorithm choice
+2. Always ask: "What is the model actually learning?"
+3. Confounded variables create misleading metrics
+4. Low R² can be more honest than high R²
 
-Key Lessons for ML in Materials Science
-Dataset design > Algorithm choice
+## Reference
 
-Always ask: "What is the model actually learning?"
+Li, X., et al. (2023). Applied machine learning to analyze and predict CO₂ adsorption behavior of metal-organic frameworks. *Carbon Capture Science & Technology*, 9, 100146.
 
-Confounded variables create misleading metrics
+## Author
 
-Low R² can be more honest than high R²
-
-Reference
-Li, X., et al. (2023). Applied machine learning to analyze and predict CO₂ adsorption behavior of metal-organic frameworks. Carbon Capture Science & Technology, 9, 100146.
-
-Author
 Vahid Safarifard
 
-License
+## License
+
 This project is licensed under the MIT License—see the LICENSE file for details.
+
